@@ -1,0 +1,33 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>br.com.sgpf</groupId>
+		<artifactId>financeiro</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>financeiro-web</artifactId>
+	<packaging>war</packaging>
+	<name>SGPF : Financeiro : Módulo Web</name>
+	<description>Módulo Web do sistema de gestão financeira pessoal</description>
+	
+	<dependencies>
+		<dependency>
+			<groupId>br.com.sgpf</groupId>
+			<artifactId>financeiro-srv</artifactId>
+			<version>${project.parent.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>br.com.sgpf</groupId>
+			<artifactId>commons-jee</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<finalName>${project.artifactId}</finalName>
+	</build>
+</project>
